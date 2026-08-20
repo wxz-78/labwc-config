@@ -1,0 +1,57 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono", "Symbols Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #3C2F28; /* Marrón tierra opaco */
+    color: #FDFD96;            /* Texto amarillo pastel */
+    border-bottom: 2px solid #F4A4C1; /* Línea de acento rosa */
+}
+
+/* Módulo Menú */
+#custom-menu {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+/* Escritorios */
+#workspaces button {
+    padding: 0 6px;
+    color: #F4A4C1;
+}
+
+#workspaces button.active {
+    color: #FDFD96;
+}
+
+/* Reloj, Red y Batería */
+#clock, #network, #battery, #tray {
+    padding: 0 10px;
+    margin: 3px 2px;
+    border-radius: 6px;
+}
+
+#clock {
+    color: #FDFD96;
+    font-weight: bold;
+}
+
+#network {
+    color: #86E3CE; /* Verde pastel suave */
+}
+
+#battery {
+    color: #FFB7C5; /* Rosa pastel */
+}
+
+#battery.warning {
+    color: #FFF591;
+}
+
+#battery.critical {
+    color: #E3C1D4;
+}

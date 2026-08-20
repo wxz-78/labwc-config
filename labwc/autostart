@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# --- Agente de Autenticación Polkit ---
+# Necesario para que apps con privilegios (actualizaciones, GUI de red, etc.)
+# puedan pedir contraseña gráficamente. Ajusta la ruta a tu agente instalado.
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# Alternativas comunes según tu distro/DE:
+# /usr/lib/polkit-kde-authentication-agent-1 &
+# /usr/libexec/polkit-gnome-authentication-agent-1 &
+
+# --- Servicio de Portapapeles (Wayland) ---
+wl-paste --type text --watch cliphist store &
+wl-paste --type image --watch cliphist store &
+
+# --- Brillo Inicial ---
+# Se ejecuta antes que el resto para evitar parpadeos de brillo alto al iniciar
+brightnessctl set 8% &
+
+# --- Fondo de Pantalla ---
+swaybg -i "$HOME/Pinturas/anime.jpeg" -m fill &
+
+# --- Barras y Notificaciones ---
+waybar &
+mako &
+
+# --- Demonio de Inactividad (bloqueo y apagado de pantalla) ---
+swayidle -w \
+    timeout 300 'swaylock -f' \
+    timeout 600 'wlopm --off "*"' \
+    resume 'wlopm --on "*"' \
+    before-sleep 'swaylock -f' &

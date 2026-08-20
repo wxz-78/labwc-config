@@ -1,0 +1,62 @@
+# --- Mako Fluttershy Theme ---
+
+# --- Configuración Global ---
+font=JetBrains Mono 10
+width=350
+height=150
+margin=15,15,15,15
+padding=15
+border-size=2
+border-radius=8
+
+# --- Comportamiento e Iconos ---
+icons=1
+max-icon-size=48
+icon-location=left
+markup=1
+actions=1
+history=1
+text-alignment=left
+default-timeout=5000
+ignore-timeout=0
+
+# Formato: Título en negrita, salto de línea, cuerpo del mensaje
+format=<b>%s</b>\n%b
+
+# --- Paleta Base (Fluttershy) ---
+background-color=#1E1B18E6
+text-color=#FAF5E8
+border-color=#F0A7B8
+progress-color=over #F0A7B8
+
+# ==================================================
+# Reglas Específicas y Urgencias
+# ==================================================
+
+# 1. Notificaciones Agrupadas
+[grouped=1]
+format=<b>%s</b>\n%b\n<i><span color="#8C8279">(%g más...)</span></i>
+border-color=#E8C547
+
+# 2. Urgencia Baja
+[urgency=low]
+border-color=#2A2521
+default-timeout=3000
+
+# 3. Urgencia Normal
+[urgency=normal]
+border-color=#F0A7B8
+default-timeout=5000
+
+# 4. Urgencia Crítica (Batería baja, errores)
+[urgency=critical]
+background-color=#2A2521E6
+border-color=#E27D93
+default-timeout=0
+ignore-timeout=1
+format=<span color="#E27D93"><b>¡Alerta! %s</b></span>\n%b
+
+# 5. Aplicaciones Multimedia (Ej. Spotify, mpd)
+[app-name=Spotify]
+default-timeout=4000
+icon-location=right

@@ -1,0 +1,84 @@
+# Theme: Fluttershy Pastel
+# Author: Custom
+
+# Main background, set to "main" or "TTY" or custom hex
+# Para usar transparencia con Alacritty dejamos main_bg vacío
+theme[main_bg]=""
+
+# Main text color
+theme[main_fg]="#4A444B"
+
+# Title color for boxes
+theme[title]="#FFB7C5"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#86E3CE"
+
+# Background color of selected item
+theme[selected_bg]="#FFD1DC"
+
+# Foreground color of selected item
+theme[selected_fg]="#4A444B"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#B5A8B2"
+
+# Color of text appearing on top of graphs
+theme[graph_text]="#6B5B6E"
+
+# Background color of percentage bars
+theme[theme_background]=""
+
+# Misc colors for outline boxes
+theme[cpu_box]="#FFB7C5"
+theme[mem_box]="#FFF591"
+theme[net_box]="#86E3CE"
+theme[proc_box]="#D4A5A5"
+
+# Box divider line color
+theme[div_line]="#E3C1D4"
+
+# Temperature graph colors (Verde pastel a Rosa/Rojo pastel)
+theme[temp_start]="#86E3CE"
+theme[temp_mid]="#FFF591"
+theme[temp_end]="#FFB7C5"
+
+# CPU graph colors (Rosa suave a Amarillo pastel)
+theme[cpu_start]="#FFB7C5"
+theme[cpu_mid]="#FFD1DC"
+theme[cpu_end]="#FFF591"
+
+# Mem/Disk available meter (Mantequilla a Turquesa)
+theme[free_start]="#FFF591"
+theme[free_mid]="#C1F0C1"
+theme[free_end]="#86E3CE"
+
+# Mem/Disk used meter (Rosa pastel a Carmín suave)
+theme[cached_start]="#FFB7C5"
+theme[cached_mid]="#E3C1D4"
+theme[cached_end]="#D4A5A5"
+
+# Mem/Disk available meter
+theme[available_start]="#FFF591"
+theme[available_mid]="#C1F0C1"
+theme[available_end]="#86E3CE"
+
+# Mem/Disk used meter
+theme[used_start]="#FFB7C5"
+theme[used_mid]="#E3C1D4"
+theme[used_end]="#D4A5A5"
+
+# Download graph colors (Turquesa a Rosa)
+theme[download_start]="#86E3CE"
+theme[download_mid]="#FFF591"
+theme[download_end]="#FFB7C5"
+
+# Upload graph colors
+theme[upload_start]="#86E3CE"
+theme[upload_mid]="#FFF591"
+theme[upload_end]="#FFB7C5"
+
+# Process box color gradient
+theme[process_start]="#FFB7C5"
+theme[process_mid]="#FFF591"
+theme[process_end]="#86E3CE"

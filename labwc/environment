@@ -1,0 +1,30 @@
+# ====================================
+# LABWC ENVIRONMENT CONFIGURATION (Clean & Minimal)
+# ====================================
+# Nota: este archivo lo lee labwc directamente (no es un script de shell),
+# así que NO se deben usar comillas en los valores.
+
+# --- 1. Teclado ---
+XKB_DEFAULT_LAYOUT=latam
+
+# --- 2. Compatibilidad nativa de apps con Wayland ---
+MOZ_ENABLE_WAYLAND=1
+QT_QPA_PLATFORM=wayland;xcb
+ELECTRON_OZONE_PLATFORM_HINT=auto
+SDL_VIDEODRIVER=wayland
+CLUTTER_BACKEND=wayland
+GDK_BACKEND=wayland,x11
+
+# --- 3. Integración de Escritorio (XDG) y Temas Qt/GTK ---
+XDG_SESSION_TYPE=wayland
+XDG_CURRENT_DESKTOP=labwc
+XDG_SESSION_DESKTOP=labwc
+QT_QPA_PLATFORMTHEME=qt5ct
+
+# --- 4. Cursor ---
+# Ajusta el nombre/tamaño a tu tema de cursor instalado
+XCURSOR_THEME=Bibata-Modern-Classic
+XCURSOR_SIZE=24
+
+# --- 5. Compatibilidad con apps Java/Electron ---
+_JAVA_AWT_WM_NONREPARENTING=1

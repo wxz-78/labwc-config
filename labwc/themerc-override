@@ -1,0 +1,128 @@
+# Labwc Theme: Fluttershy Pastel
+# Estética: crema, rosa suave, lavanda y azul mariposa
+
+# === Configuración general ===
+border.width: 2
+window.titlebar.padding.width: 7
+window.titlebar.padding.height: 4
+window.label.text.justify: Center
+window.label.text.font: sans-serif 10
+
+# === Ventana activa ===
+# Rosa pastel con un borde azul inspirado en las mariposas
+window.active.border.color: #82A9D6
+window.active.title.bg: Gradient Vertical
+window.active.title.bg.color: #FCE9F0
+window.active.title.bg.colorTo: #F4CFE0
+window.active.label.text.color: #5A4354
+
+# Indicador de atajos/modificadores activos
+window.active.indicator.toggled-keybind.color: #F5D983
+
+# Botones de ventana activa
+window.active.button.unpressed.image.color: #765B70
+window.active.button.hover.bg.color: #EFAFC6
+window.active.button.hover.image.color: #FFFFFF
+window.active.button.pressed.bg.color: #D88EAF
+window.active.button.pressed.image.color: #FFFFFF
+
+# Botón de cerrar con rosa más intenso
+window.active.button.close.unpressed.image.color: #C76D91
+window.active.button.close.hover.bg.color: #D77D9E
+window.active.button.close.hover.image.color: #FFFFFF
+
+# Minimizar y maximizar: acentos suaves
+window.active.button.iconify.unpressed.image.color: #9A7B55
+window.active.button.max.unpressed.image.color: #668DBA
+
+# === Ventana inactiva ===
+# Lavanda tenue, para no robar atención al fondo
+window.inactive.border.color: #CBBBC7
+window.inactive.title.bg: Gradient Vertical
+window.inactive.title.bg.color: #F5EFF2
+window.inactive.title.bg.colorTo: #E7DDE5
+window.inactive.label.text.color: #9A8595
+
+window.inactive.button.unpressed.image.color: #AA98A5
+window.inactive.button.hover.bg.color: #E4D1DB
+window.inactive.button.hover.image.color: #6B5062
+
+window.inactive.button.close.unpressed.image.color: #C79BAB
+window.inactive.button.iconify.unpressed.image.color: #B8A681
+window.inactive.button.max.unpressed.image.color: #9BAFCC
+
+# === Bordes redondeados ===
+window.active.border.corner-radius: 10
+window.inactive.border.corner-radius: 10
+window.active.title.bg.corner-radius: 8
+window.inactive.title.bg.corner-radius: 8
+window.button.hover.bg.corner-radius: 8
+window.button.pressed.bg.corner-radius: 8
+
+# === Sombras suaves ===
+# "enabled" es necesario; sin esto size/color se ignoran y no se ven sombras
+window.active.shadow.enabled: yes
+window.active.shadow.size: 34
+window.active.shadow.color: #79616D66
+window.inactive.shadow.enabled: yes
+window.inactive.shadow.size: 20
+window.inactive.shadow.color: #79616D35
+
+# === Menú contextual ===
+menu.border.width: 2
+menu.border.color: #82A9D6
+menu.width.min: 180
+menu.width.max: 320
+
+menu.items.bg.color: #FFF9ED
+menu.items.text.color: #5A4354
+menu.items.text.font: sans-serif 10
+menu.items.padding.x: 12
+menu.items.padding.y: 7
+
+menu.items.active.bg.color: #F4CFE0
+menu.items.active.text.color: #513848
+
+menu.separator.width: 1
+menu.separator.padding.width: 8
+menu.separator.padding.height: 5
+menu.separator.color: #E6CAD7
+
+menu.title.bg.color: #F8D9E4
+menu.title.text.color: #5A4354
+menu.title.text.justify: Center
+
+# === OSD: Alt+Tab, escritorios y avisos ===
+osd.bg.color: #FFF9EDF2
+osd.border.width: 2
+osd.border.color: #82A9D6
+osd.label.text.color: #5A4354
+osd.label.text.font: sans-serif 10
+
+osd.window-switcher.style-classic.width: 55%
+osd.window-switcher.style-classic.padding: 10
+osd.window-switcher.style-classic.item.padding.x: 12
+osd.window-switcher.style-classic.item.padding.y: 6
+osd.window-switcher.style-classic.item.active.bg.color: #F4CFE0
+osd.window-switcher.style-classic.item.active.border.width: 2
+osd.window-switcher.style-classic.item.active.border.color: #82A9D6
+
+osd.window-switcher.preview.border.width: 2
+osd.window-switcher.preview.border.color: #82A9D6
+
+osd.workspace-switcher.boxes.width: 22
+osd.workspace-switcher.boxes.height: 22
+osd.workspace-switcher.boxes.border.width: 2
+
+# === Vista previa al ajustar ventanas ===
+snapping.overlay.region.bg.enabled: yes
+snapping.overlay.edge.bg.enabled: yes
+snapping.overlay.region.border.enabled: yes
+snapping.overlay.edge.border.enabled: yes
+
+snapping.overlay.region.bg.color: #82A9D640
+snapping.overlay.edge.bg.color: #F5D98355
+snapping.overlay.region.border.width: 2
+snapping.overlay.edge.border.width: 2
+snapping.overlay.region.border.color: #82A9D6
+snapping.overlay.edge.border.color: #E5BD59
